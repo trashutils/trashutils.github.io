@@ -1,0 +1,66 @@
+html, body {
+    background-color: rgb(187, 187, 187);
+}
+
+.logo {
+    background-image: url("img/trash_utils.png");
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+}
+
+.gear {
+    background-image: url("img/gear.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    height: 200px;
+    width: 200px;
+}
+
+.animation {
+    border: 20px solid grey;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(138, 138, 138);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.content {
+    border: 20px solid grey;
+    border-radius: 40px;
+    background-color: rgb(104, 93, 93);
+    padding: 20px;
+    height: 1500px;
+}
+
+h1 {
+    margin-top: 0;
+    font-style: bold;
+    font-family: Impact;
+    font-size: 10vw;
+    color: lightgrey;
+    text-align: center;
+}
+
+ul {
+    font-size: 5vw;
+    list-style: none;
+    font-family: Impact;
+}
+
+li:hover {
+    color: green;
+    margin-left: 1%;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
