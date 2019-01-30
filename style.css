@@ -59,6 +59,11 @@ ul {
 li:hover {
     color: green;
     margin-left: 1%;
+    border: 5px dotted lightgreen;
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform:rotate(2deg);
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
